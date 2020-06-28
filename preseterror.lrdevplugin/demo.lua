@@ -14,7 +14,7 @@ LrTasks.startAsyncTask(function ()
   local edits = {
     Exposure2012 = 1
   }
-  photo.catalog:withWriteAccessDo("VSCO Keys", function()
+  photo.catalog:withWriteAccessDo("Preset Error Demo", function()
     local preset = LrApplication.addDevelopPresetForPlugin(_PLUGIN, "Update Exposure in plugin preset", edits)
     photo:applyDevelopPreset(preset, _PLUGIN)
   end, {asynchronous = true})
